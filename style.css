@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.wrapper{
+
+.wrapper {
     width: 700px;
     overflow: hidden;
     padding: 1rem 2rem;
@@ -38,7 +40,7 @@ header h3 {
 }
 
 /* welcome words */
-.welcome_words p{
+.welcome_words p {
     line-height: 30px;
     font-weight: 500;
     font-size: 20px;
@@ -46,7 +48,7 @@ header h3 {
 }
 
 /* working process */
-.working_process{
+.working_process {
     background-color: #16252C;
     margin-top: 2rem;
     text-align: center;
@@ -54,13 +56,15 @@ header h3 {
     border-radius: 22px;
     position: relative;
 }
-.working_process h2{
+
+.working_process h2 {
     font-size: 35px;
     font-weight: bold;
     color: #29B475;
     margin-bottom: 3rem;
 }
-.working_process .card{
+
+.working_process .card {
     background: #1c3541b2;
     width: 183px;
     height: 360px;
@@ -72,7 +76,8 @@ header h3 {
     padding: 0 .5rem;
     position: relative;
 }
-.working_process .card div{
+
+.working_process .card div {
     position: absolute;
     top: -40px;
     left: 60px;
@@ -82,44 +87,52 @@ header h3 {
     align-items: center;
     justify-content: center;
 }
-.card div img{
+
+.card div img {
     width: 40px;
 }
-.working_process .card hr{
+
+.working_process .card hr {
     width: 70px;
 }
-.working_process .card h3{
+
+.working_process .card h3 {
     font-size: 22px;
 }
-.working_process .card h5{
+
+.working_process .card h5 {
     font-size: 17px;
     font-weight: 500;
     line-height: 20px;
 }
-.colored{
+
+.colored {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     position: absolute;
     top: -40px;
-    right:-40px;
+    right: -40px;
 }
 
 /* curriculum */
-.curriculum{
+.curriculum {
     position: relative;
 }
-.curriculum div{
+
+.curriculum div {
     width: 90%;
     margin: auto;
     text-align: center;
 }
-.curriculum h3{
+
+.curriculum h3 {
     text-align: center;
     margin: 3rem;
     font-size: 20px;
 }
-.curriculum a{
+
+.curriculum a {
     width: 276px;
     border: 1px solid #29B475;
     border-radius: 12px;
@@ -130,11 +143,13 @@ header h3 {
     transition: all 0.3s;
     background: #fff;
 }
-.curriculum a:hover{
+
+.curriculum a:hover {
     background: #29B475;
     color: #fff;
 }
-.curriculum .arrow_icon{
+
+.curriculum .arrow_icon {
     width: 100px;
     position: absolute;
     top: 50px;
@@ -142,26 +157,30 @@ header h3 {
 }
 
 /* login */
-.login div{
+.login div {
     text-align: center;
 }
-.login div:nth-child(1){
+
+.login div:nth-child(1) {
     width: 80%;
     margin: 2.5rem auto;
 }
-.login h3{
+
+.login h3 {
     margin-top: 3rem;
     font-size: 20px;
     font-weight: 700;
 }
-.login_btn{
+
+.login_btn {
     border-radius: 12px;
     background: #b1b1b138;
     height: 165px;
     align-items: center;
     justify-content: center;
 }
-.login_btn a{
+
+.login_btn a {
     width: 340px;
     padding: 1rem;
     border-radius: 12px;
@@ -174,24 +193,287 @@ header h3 {
     font-weight: 500;
     transition: all 0.3s;
 }
-.login_btn a:hover{
+
+.login_btn a:hover {
     background: #fff;
     border: 1px solid #29B475;
     color: #29B475;
 }
 
 /* footer */
-footer div{
+footer div {
     text-align: center;
     padding: 1rem 0;
 }
-footer h2{
+
+footer h2 {
     font-size: 30px;
     font-weight: 700;
     margin-top: 2rem;
 }
-footer h1{
+
+footer h1 {
     font-size: 40px;
     font-weight: 700;
     color: #29B475;
+}
+
+/* media query */
+@media(max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    /* header */
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    header h2 {
+        font-size: 23px;
+    }
+
+    header h3 {
+        font-size: 30px;
+    }
+
+    .banner {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    /* welcome words */
+    .welcome_words p {
+        line-height: 32px;
+        font-size: 18px;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    /* working process */
+    .working_process h2 {
+        font-size: 28px;
+    }
+
+    .working_process .card_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .working_process .card {
+        width: 80%;
+        padding: 0 2rem;
+        margin: 1.5rem 0;
+    }
+
+    .working_process .card div {
+        position: absolute;
+        top: -40px;
+        left: 110px;
+    }
+
+    .colored {
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+
+    .colored:last-child {
+        top: 1200px !important;
+    }
+
+    /* curriculum */
+    .curriculum h3 {
+        margin: 2rem 0;
+    }
+
+    .curriculum a {
+        font-size: 13px;
+    }
+
+    .curriculum .arrow_icon {
+        width: 50px;
+        position: absolute;
+        top: 55px;
+        right: 25px;
+    }
+
+    .login div:nth-child(1) {
+        width: 95%;
+    }
+
+    .login_btn a {
+        width: 200px;
+        padding: 0.5rem;
+        font-size: 25px;
+    }
+
+    /* footer */
+    footer h2 {
+        font-size: 23px;
+    }
+
+    footer h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:375px) {
+
+    /* header */
+    .logo img {
+        width: 130px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 25px;
+    }
+
+    /* welcome words */
+    .welcome_words p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    /* working process */
+    .working_process h2 {
+        font-size: 23px;
+    }
+
+    .working_process .card div {
+        position: absolute;
+        top: -40px;
+        left: 95px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .working_process .card h3 {
+        font-size: 20px;
+    }
+
+    .working_process .card h5 {
+        font-size: 15px;
+    }
+
+    .card div img {
+        width: 30px;
+    }
+
+    /* curriculum */
+    .curriculum h3 {
+        font-size: 17px;
+    }
+
+    .curriculum a {
+        font-size: 12px;
+    }
+
+    .curriculum .arrow_icon {
+        width: 30px;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+    }
+
+    /* login */
+
+    .login h3 {
+        font-size: 17px;
+    }
+
+    .login_btn {
+        height: 155px;
+    }
+
+    .login_btn a {
+        width: 165px;
+        padding: 0.4rem;
+        font-size: 20px;
+    }
+
+    /* footer */
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:320px) {
+    .wrapper {
+        padding: 1rem 1rem;
+    }
+
+    /* header */
+    header h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    /* welcome words */
+    .welcome_words p {
+        margin: 0;
+        line-height: 26px;
+        font-size: 15px;
+    }
+
+    /* working process */
+    .working_process .card div {
+        position: absolute;
+        top: -40px;
+        left: 80px;
+    }
+
+    /* curriculum */
+    .curriculum h3 {
+        font-size: 16px;
+    }
+    .curriculum a {
+        font-size: 11px;
+    }
+    .curriculum .arrow_icon{
+        position: absolute;
+        top: 20px;
+        right: -22px;
+    }
+    .curriculum .arrow_icon img{
+        width: 50px;
+        position: absolute;
+        top: 40px;
+        right: 25px;
+    }
+
+    /* login */
+    .login h3 {
+        font-size: 16px;
+    }
+    .login_btn {
+        height: 130px;
+    }
+    .login_btn a {
+        width: 145px;
+        font-size: 18px;
+    }
 }
